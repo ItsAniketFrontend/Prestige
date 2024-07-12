@@ -196,6 +196,20 @@ nav a {
   font-family: "Manrope", sans-serif;
 }
 
+.floor-plans {
+  padding: 50px 0px;
+}
+.floor-plans h2 {
+  font-size: 38px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  line-height: normal;
+  margin: 0px;
+  padding-bottom: 32px;
+  text-transform: capitalize;
+}
+
 .location {
   padding: 50px 0px;
 }
