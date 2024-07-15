@@ -31,9 +31,7 @@
 
 header {
     .top-logo {
-        @media (max-width:991px) {
-            width: 140px;
-        }
+       width: 140px;
 
     }
 }
@@ -41,7 +39,7 @@ header {
 nav {
     a {
         font-size: 16px !important;
-        font-family: avalon-medium;
+        font-family: avalon-book !important;
         line-height: normal;
         color: #000 !important;
         text-transform: uppercase;

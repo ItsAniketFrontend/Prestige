@@ -24,15 +24,13 @@
   font-family: avalon-demi;
   src: url(../avalon/Avalon-Demi.ttf);
 }
-@media (max-width: 991px) {
-  header .top-logo {
-    width: 140px;
-  }
+header .top-logo {
+  width: 140px;
 }
 
 nav a {
   font-size: 16px !important;
-  font-family: avalon-medium;
+  font-family: avalon-book !important;
   line-height: normal;
   color: #000 !important;
   text-transform: uppercase;
