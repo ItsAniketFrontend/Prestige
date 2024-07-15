@@ -158,6 +158,9 @@ nav .navbar-toggler .navbar-toggler-icon {
     font-size: 36px;
   }
 }
+.floor img {
+  cursor: pointer;
+}
 .floor button {
   padding: 5px 40px;
   border: none;
