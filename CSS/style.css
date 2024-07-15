@@ -70,6 +70,25 @@ nav .navbar-toggler .navbar-toggler-icon {
   width: fit-content;
 }
 
+.scroll-btn {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+}
+.scroll-btn button {
+  border: none;
+  background-color: #997A49;
+  font-size: 21px;
+  font-family: avalon-book;
+  color: #fff;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  text-transform: capitalize;
+}
+
 .banner {
   margin-top: 7rem;
 }
