@@ -24,6 +24,13 @@
   font-family: avalon-demi;
   src: url(../avalon/Avalon-Demi.ttf);
 }
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1200;
+  background-color: #fff;
+}
 header .top-logo {
   width: 100px;
 }
@@ -61,6 +68,10 @@ nav .navbar-toggler .navbar-toggler-icon {
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.banner {
+  margin-top: 7rem;
 }
 
 .content {
@@ -269,8 +280,9 @@ nav .navbar-toggler .navbar-toggler-icon {
 
 .popup_form h6 {
   color: #997A49;
-  font-family: avalon-book;
-  font-size: 18px;
+  font-family: avalon-bold;
+  font-size: 15px;
+  text-align: center;
 }
 
 .popup_form button {

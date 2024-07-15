@@ -30,6 +30,11 @@
 }
 
 header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1200;
+    background-color: #fff;
     .top-logo {
        width: 100px;
 
@@ -72,6 +77,10 @@ nav {
     color: #fff;
     text-decoration: none;
     width: fit-content;
+}
+
+.banner{
+    margin-top: 7rem;
 }
 
 .content {
@@ -293,8 +302,9 @@ nav {
 
 .popup_form h6 {
     color: #997A49;
-    font-family: avalon-book;
-    font-size: 18px;
+    font-family: avalon-bold;
+    font-size: 15px;
+    text-align: center;
 }
 
 .popup_form button {
