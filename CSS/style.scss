@@ -144,7 +144,7 @@ nav {
 
     h3 {
         font-size: 32px;
-        font-family: avalon-medium;
+        font-family: avalon-book;
         color: #000;
         margin: 0px;
         padding-bottom: 16px;
@@ -177,6 +177,18 @@ nav {
     }
     img{
         cursor: pointer;
+        
+    }
+    .img-box{
+        position: relative;
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background: #000;
+        height: 100%;
     }
 
     button {

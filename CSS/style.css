@@ -129,7 +129,7 @@ nav .navbar-toggler .navbar-toggler-icon {
 }
 .location h3 {
   font-size: 32px;
-  font-family: avalon-medium;
+  font-family: avalon-book;
   color: #000;
   margin: 0px;
   padding-bottom: 16px;
@@ -160,6 +160,17 @@ nav .navbar-toggler .navbar-toggler-icon {
 }
 .floor img {
   cursor: pointer;
+}
+.floor .img-box {
+  position: relative;
+}
+.floor .overlay {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  height: 100%;
 }
 .floor button {
   padding: 5px 40px;
