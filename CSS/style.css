@@ -53,6 +53,7 @@ nav .navbar-toggler .navbar-toggler-icon {
 }
 
 .cta {
+  margin-top: 15px;
   padding: 5px 40px;
   border: none;
   background-color: #997A49;
@@ -60,6 +61,8 @@ nav .navbar-toggler .navbar-toggler-icon {
   font-family: avalon-book;
   color: #fff;
   text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .content {
