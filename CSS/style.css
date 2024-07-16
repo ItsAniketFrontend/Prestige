@@ -25,14 +25,13 @@
   src: url(../avalon/Avalon-Demi.ttf);
 }
 header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 1200;
   background-color: #fff;
 }
-header .top-logo {
+header .left-logo {
   width: 100px;
+}
+header .right-logo {
+  width: 160px;
 }
 
 nav a {
@@ -88,9 +87,11 @@ nav .navbar-toggler .navbar-toggler-icon {
   padding: 10px 30px;
   text-transform: capitalize;
 }
-
-.banner {
-  margin-top: 7rem;
+@media (max-width: 991px) {
+  .scroll-btn button {
+    font-size: 17px;
+    padding: 5px 20px;
+  }
 }
 
 .content {
@@ -197,19 +198,121 @@ nav .navbar-toggler .navbar-toggler-icon {
     font-size: 36px;
   }
 }
-.floor img {
+.floor .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.floor .gallery .image {
+  padding: 7px;
+  width: 50%;
   cursor: pointer;
 }
-.floor .img-box {
+.floor .gallery .image span {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.floor .gallery .image img {
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.floor .gallery .image:hover img {
+  transform: scale(1.1);
+}
+.floor .preview-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.floor .preview-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.floor .preview-box .details {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+}
+.floor .preview-box .details .title {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.floor .details .title p {
+  margin: 0 5px;
+}
+.floor .details .title p.current-img {
+  font-weight: 500;
+}
+.floor .details .icon {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+.floor .preview-box .image-box {
+  display: flex;
+  width: 100%;
   position: relative;
 }
-.floor .overlay {
+.floor .image-box .slide {
   position: absolute;
-  width: 100%;
-  top: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.floor .slide.prev {
   left: 0px;
-  background: #000;
+}
+.floor .slide.next {
+  right: 0px;
+}
+.floor .image-box img {
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.floor .shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0, 0, 0, 0.45);
+}
+@media (max-width: 1000px) {
+  .floor .gallery .image {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .floor .gallery .image {
+    width: 100%;
+    padding: 4px;
+  }
 }
 .floor button {
   padding: 5px 40px;
